@@ -2,7 +2,7 @@
 Runs [pug-lint](https://github.com/pugjs/pug-lint) as [mocha](https://github.com/mochajs/mocha) tests.
 
 [![Build Status](https://travis-ci.org/jonatanpedersen/mocha-pug-lint.svg?branch=master)](https://travis-ci.org/jonatanpedersen/mocha-pug-lint)
-[![Build Status](https://img.shields.io/npm/v/mocha-pug-lint.svg)](https://www.npmjs.com/package/mocha-pug-lint)
+[![NPM Version](https://img.shields.io/npm/v/mocha-pug-lint.svg)](https://www.npmjs.com/package/mocha-pug-lint)
 [![NSP Status](https://nodesecurity.io/orgs/jonatanpedersen/projects/1de17d93-0e43-41ad-902d-a76ec50cd02e/badge)](https://nodesecurity.io/orgs/jonatanpedersen/projects/1de17d93-0e43-41ad-902d-a76ec50cd02e)
 
 ## Install
