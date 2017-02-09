@@ -1,0 +1,36 @@
+{
+  "name": "mocha-pug-lint",
+  "version": "1.4.2",
+  "description": "run pug-lint as mocha tests",
+  "main": "index.js",
+  "scripts": {
+    "postversion": "git push && git push --tags",
+    "preversion": "npm test",
+    "test": "mocha"
+  },
+  "keywords": [
+    "mocha",
+    "mochaplugin",
+    "pug-lint"
+  ],
+  "author": "Jonatan Pedersen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonatanpedersen/mocha-pug-lint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonatanpedersen/mocha-pug-lint/issues"
+  },
+  "homepage": "https://github.com/jonatanpedersen/mocha-pug-lint#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "glob-all": "^3.1.0",
+    "mocha": "^3.2.0",
+    "pug-lint": "^2.4.0",
+    "text-table": "^0.2.0"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}
