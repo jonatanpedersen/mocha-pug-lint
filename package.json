@@ -1,12 +1,12 @@
 {
   "name": "mocha-pug-lint",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "run pug-lint as mocha tests",
   "main": "index.js",
   "scripts": {
     "postversion": "git push && git push --tags",
     "preversion": "npm test",
-    "test": "mocha"
+    "test": "cross-env NODE_ENV=test mocha"
   },
   "keywords": [
     "mocha",
@@ -28,9 +28,13 @@
     "glob-all": "^3.1.0",
     "mocha": "^5.0.1",
     "pug-lint": "^2.4.0",
+    "strip-ansi": "^4.0.0",
     "text-table": "^0.2.0"
   },
   "engines": {
     "node": ">=6"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.3"
   }
 }

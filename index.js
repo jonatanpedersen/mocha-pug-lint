@@ -2,6 +2,7 @@ const chalk = require('chalk');
 const fs = require('fs');
 const globAll = require('glob-all');
 const Linter = require('pug-lint');
+const stripAnsi = require('strip-ansi');
 const textTable = require('text-table');
 
 module.exports = function (patterns, options) {
@@ -41,7 +42,7 @@ function errorsTable (errors) {
 		{
 			align: ['', 'r', 'l'],
 			stringLength: function (str) {
-				return chalk.stripColor(str).length;
+				return stripAnsi(str).length;
 			}
 		}
 	);
