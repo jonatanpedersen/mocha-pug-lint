@@ -1,4 +1,5 @@
 # mocha-pug-lint
+
 Runs [pug-lint](https://github.com/pugjs/pug-lint) as [mocha](https://github.com/mochajs/mocha) tests.
 
 [![Build Status](https://travis-ci.org/jonatanpedersen/mocha-pug-lint.svg?branch=master)](https://travis-ci.org/jonatanpedersen/mocha-pug-lint)
@@ -8,32 +9,35 @@ Runs [pug-lint](https://github.com/pugjs/pug-lint) as [mocha](https://github.com
 ## Install
 
 ``` bash
-$ npm install mocha-pug-lint --save-dev
+npm install mocha-pug-lint -D
 ```
 
 ## Usage
 
-### Syntax:
+### Syntax
+
 ``` javascript
 mochaPugLint(patterns, options);
 ```
 
 Where patterns is an array of [glob patterns](https://github.com/jpillora/node-glob-all) and options are an object with [pug-lint rules](https://github.com/pugjs/pug-lint/blob/master/docs/rules.md).
 
-### Example:
+### Example
 
 pug-lint.spec.js
+
 ``` javascript
 const mochaPugLint = require('mocha-pug-lint');
 
 mochaPugLint([
-	'./test/files/**/*.pug'
+  './test/files/**/*.pug'
 ], {
-	disallowAttributeConcatenation: true
+  disallowAttributeConcatenation: true
 });
 ```
 
 ## License
+
 MIT License
 
 Copyright (c) 2017 [Jonatan Pedersen](https://www.jonatanpedersen.com/)
