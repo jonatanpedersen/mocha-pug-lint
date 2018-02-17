@@ -24,9 +24,9 @@
   },
   "homepage": "https://github.com/jonatanpedersen/mocha-pug-lint#readme",
   "dependencies": {
-    "chalk": "^1.1.3",
+    "chalk": "^2.3.1",
     "glob-all": "^3.1.0",
-    "mocha": "^3.2.0",
+    "mocha": "^5.0.1",
     "pug-lint": "^2.4.0",
     "text-table": "^0.2.0"
   },
