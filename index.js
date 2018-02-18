@@ -1,9 +1,11 @@
 const chalk = require('chalk');
 const fs = require('fs');
+const path = require('path');
 const globAll = require('glob-all');
 const Linter = require('pug-lint');
 const stripAnsi = require('strip-ansi');
 const textTable = require('text-table');
+const configFile = require('pug-lint/lib/config-file');
 
 module.exports = function (patterns, options) {
 	describe('pug-lint', function () {
@@ -11,6 +13,12 @@ module.exports = function (patterns, options) {
 			.forEach(function (file) {
 				it(`${file} should pass pug-lint rules`, function() {
 					const linter = new Linter();
+
+					if (options === undefined) {
+						const dir = path.dirname(file);
+						options = configFile.load(null, dir);
+					}
+					
 					linter.configure(options);
 					const errors = linter.checkFile(file);
 
