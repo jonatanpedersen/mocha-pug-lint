@@ -1,5 +1,4 @@
 const chalk = require('chalk');
-const fs = require('fs');
 const path = require('path');
 const globAll = require('glob-all');
 const Linter = require('pug-lint');

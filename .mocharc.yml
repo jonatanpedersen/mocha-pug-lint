@@ -1,0 +1,2 @@
+reporter: spec
+spec: ./test/pug-lint.spec.js
